@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  /* outline: 2px solid red; */
+}
+
+
+@keyframes slide {
+
+  0%,
+  20%,
+  100% {
+    left: 0;
+  }
+
+  25%,
+  45% {
+    left: -100%;
+  }
+
+  50%,
+  70% {
+    left: -200%;
+  }
+
+  75%,
+  95% {
+    left: -300%;
+  }
+}
+
+.animate-slide {
+  animation: slide 9s infinite;
+}
+
+
+ 
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
