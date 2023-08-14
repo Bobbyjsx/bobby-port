@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { PROJECT} from "@/app/(pages)/Projects/page";
+import { PROJECT} from "@/app/Projects/page";
 import Image from "next/image";
 
 type Props = {

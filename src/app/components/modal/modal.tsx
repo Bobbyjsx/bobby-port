@@ -1,7 +1,7 @@
 import { Dispatch, Fragment, SetStateAction, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { CheckIcon } from "@heroicons/react/24/outline";
-import { PROJECT } from "@/app/(pages)/Projects/page";
+import { PROJECT } from "@/app/Projects/page";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
