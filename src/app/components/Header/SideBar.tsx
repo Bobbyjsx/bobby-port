@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import Quote from "./Quote";
+// import Quote from "./Quote";
 import { socials } from "./page";
 import { Tooltip } from "../common/tooltip";
 
@@ -128,7 +128,7 @@ export default function SideBar({
 														)}
 													</div>
 													<div className="py-6 shadow-inner flex absolute bottom-0">
-														<Quote />
+														{/* <Quote /> */}
 													</div>
 												</div>
 											</div>

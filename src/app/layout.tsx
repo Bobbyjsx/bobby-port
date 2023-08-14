@@ -2,7 +2,7 @@ import Footer from "./components/Footer/page";
 import Header from "./components/Header/page";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import ContextProvider from "./lib/GlobalContext";
+// import ContextProvider from "./lib/GlobalContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,11 +19,9 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<ContextProvider>
 					<Header />
 					{children}
 					<Footer />
-				</ContextProvider>
 			</body>
 		</html>
 	);
