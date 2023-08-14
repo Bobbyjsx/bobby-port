@@ -7,7 +7,7 @@ import { Input } from "@/app/components/common/Input";
 import { Button } from "@/app/components/common/Button";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { EmailSchema } from "@/app/components/modules/Contact/EmailSchema";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 type FormData = {
 	fullname: string;

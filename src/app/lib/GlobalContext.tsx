@@ -4,16 +4,16 @@ import {
 	QueryClientProvider,
 } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import NextNProgress from "nextjs-progressbar";
 import { Toaster } from "react-hot-toast";
+
 const queryClient = new QueryClient();
 
-const progressOptions = {
-	color: "#29D",
-	startPosition: 0.3,
-	stopDelayMs: 200,
-	height: 3,
-};
+// const progressOptions = {
+// 	color: "#29D",
+// 	startPosition: 0.3,
+// 	stopDelayMs: 200,
+// 	height: 3,
+// };
 
 export default function ContextProvider({
 	children,
@@ -22,7 +22,7 @@ export default function ContextProvider({
 }) {
 	return (
 		<>
-			<NextNProgress {...progressOptions} />
+			{/* <NextNProgress {...progressOptions} /> */}
 			<QueryClientProvider client={queryClient}>
 				<Toaster />
 				{children}
