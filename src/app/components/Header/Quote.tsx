@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { get } from "@/app/lib/api";
 import { useQuery } from "@tanstack/react-query";
 import { LoadingSpinner } from "../common/LoadingSpinner";
-import { useLocalStorage } from "@/app/hooks/UseLocalStorage";
+// import { useLocalStorage } from "@/app/hooks/UseLocalStorage";
 
 interface Quote {
 	text: string;
@@ -17,7 +17,7 @@ function getRandomNumberInRange(min: number, max: number) {
 
 const Quote = () => {
 
-	const [randomNumber, setRandomNumber] = useLocalStorage<number>("randomNumber", 0)
+	// const [randomNumber, setRandomNumber] = useLocalStorage<number>("randomNumber", 0)
 	
 	const { data, isLoading, error, isSuccess } = useQuery<Quote[]>({
 		queryKey: ["quotes"],
@@ -36,7 +36,7 @@ const Quote = () => {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			const newRandomNumber = getRandomNumberInRange(0, length);
-			setRandomNumber(newRandomNumber);
+			// setRandomNumber(newRandomNumber);
 		}, 5000);
 
 		// Stop generating numbers after a certain duration (e.g., 1 minute)
@@ -46,7 +46,7 @@ const Quote = () => {
 
 		// Cleanup interval on component unmount
 		return () => clearInterval(interval);
-	}, [length, setRandomNumber]);
+	}, [length, ]);
 
 	if (isLoading) {
 		return <LoadingSpinner />;
@@ -56,7 +56,7 @@ const Quote = () => {
 		return null; // Handle error or no data case
 	}
 
-	const quote = data[randomNumber];
+	const quote = data[0];
 
 	return (
 		<div>
