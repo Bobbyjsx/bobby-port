@@ -9,7 +9,7 @@ export type PROJECT = {
 	description: string;
 	image: string;
 	githubLink: string;
-	liveURL: string;
+	liveURL?: string;
 	stack?: string[];
 	sub?: string;
 };
@@ -19,7 +19,7 @@ const projects: PROJECT[] = [
 		description:
 			"IP Tracker is a web application that allows users to track the geolocation of an IP address. It utilizes the geo.ipify API to fetch location data and displays it on a map.",
 		image: "/projects/ip-tracker.png",
-		githubLink: "https://github.com/yourusername/ip-tracker",
+		githubLink: "https://github.com/Bobbyjsx/ip-tracker",
 		stack: ["Next.js", "Tailwind CSS", "REST API", "Axios"],
 		liveURL: "https://ip-tracker-ten-neon.vercel.app/",
 		sub: "Geolocate IP addresses and track their locations.",
@@ -45,7 +45,7 @@ const projects: PROJECT[] = [
 		description:
 			"NextNews is a news aggregator website that displays the latest news headlines from various sources. Users can filter news by category and read the full articles on external sites.",
 		image: "/projects/next-news.png",
-		githubLink: "https://github.com/yourusername/next-news",
+		githubLink: "https://github.com/Bobbyjsx/next-news",
 		stack: [
 			"Next.js",
 			"Tailwind CSS",
@@ -55,6 +55,53 @@ const projects: PROJECT[] = [
 		],
 		liveURL: "https://next-news-eta-teal.vercel.app/",
 		sub: "Stay updated with the latest news from around the world.",
+	},
+	{
+		name: "MovieBox",
+		description:
+			"MovieBox is a movie gallery that displays relevant info about movies. it comes with search functionality, allowing you to search for the movie you want",
+		image: "/projects/moviebox.png",
+		githubLink: "https://github.com/Bobbyjsx/stage-2",
+		stack: [
+			"Next.js",
+			"Tailwind CSS",
+			"TMDB API",
+			"REST API",
+			"React Query",
+			"Axios",
+		],
+		liveURL: "https://stage-2-one.vercel.app/",
+		sub: "Search for movies you want.",
+	},
+	{
+		name: "HelpMeOut - Landing Page",
+		description:
+			"This is the landing page of a chrome extension (HelpMeOut). \n It comes with more! after recording is done on the extension, users are redirected here to watch their recordings, share or save to the cloud. \n Sadly, due to costs, the backend is down",
+		image: "/projects/helpmeout.png",
+		githubLink: "https://github.com/Bobbyjsx/chrome-ext-fe-2",
+		stack: ["Next.js", "Tailwind CSS", "REST API", "Axios"],
+		liveURL: "https://next-news-eta-teal.vercel.app/",
+		sub: "Chrome extension landing page.",
+	},
+	{
+		name: "HelpMeOut - Extension",
+		description:
+			"this is a chrome extension that allows users to seamlessly record their screens and save the recorded videos.\n Visit the Github repo for instructions to setup locally. ",
+		image: "/projects/ext.png",
+		githubLink: "https://github.com/Bobbyjsx/chrome-ext",
+		stack: ["javaScript", "HTML", "CSS", "Chrome API"],
+		sub: "Screen recording made easy.",
+	},
+	{
+		name: "MetaBnB",
+		description:
+			"MetaBnB is a visually appealing project. The idea behind it was to create an AirBnB for the Metaverse where payments are NFT, Crypto and blockchain based.",
+		image: "/projects/metabnb.png",
+		githubLink:
+			"https://github.com/Bobbyjsx/meta-final/tree/master",
+		stack: ["React.js"],
+		liveURL: "https://meta-bnb-dusky.vercel.app/",
+		sub: "The AirBnb of the Metaverse.",
 	},
 ];
 

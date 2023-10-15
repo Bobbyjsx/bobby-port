@@ -9,7 +9,7 @@ const Home = () => {
 		"/bob4.png",
 	];
 	return (
-		<main className="w-full md:h-screen h-screen flex justify-center items-center md:p-0 px-4">
+		<main className="w-full md:h-screen h-full flex justify-center items-center md:p-0 px-4">
 			<div className="flex justify-center items-center md:flex-col flex-col">
 				<div className=" flex items-center justify-center">
 					<h3 className=" inline-block capitalize text-center text-2xl md:text-4xl font-bold text-zinc-800 font-serif w-full md:w-1/2">
@@ -41,7 +41,7 @@ const Home = () => {
 								Contact
 							</h1>
 							<p className="text-zinc-800 text-sm font-sans">
-								Lagos,Nigeria.
+								Lagos, Nigeria.
 								<br />
 								<span className="underline decoration-indigo-300">
 									ezealagodswill@gmail.com

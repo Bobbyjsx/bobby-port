@@ -36,7 +36,7 @@ export const Modal = ({
 					leave="ease-in duration-200"
 					leaveFrom="opacity-100"
 					leaveTo="opacity-0">
-					<div className="fixed inset-0 bg-gray-500 bg-opacity-75 backdrop-blur-sm transition-opacity" />
+					<div className="fixed inset-0 bg-white/30 backdrop-blur transition-opacity" />
 				</Transition.Child>
 
 				<div className="fixed inset-0 z-50 overflow-y-auto">
@@ -51,7 +51,7 @@ export const Modal = ({
 							leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
 							<Dialog.Panel
 								className={classNames(
-									"transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 shadow-xl transition-all",
+									"transform overflow-hidden rounded-lg bg-white/30 px-4 pb-4 pt-5 shadow-xl transition-all",
 									modalContainerClassName
 								)}>
 								<div className="absolute right-0 top-0 z-50 pr-4 pt-4 sm:block">
