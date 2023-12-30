@@ -74,7 +74,7 @@ const Home = () => {
 						</div>
 						<div className="">
 							<h1 className="font-serif text-xl underline">
-								High-Level Programing Languages
+								High-Level Programming Languages
 							</h1>
 							<p className="text-zinc-800 text-4xl font-semibold  font-sans">
 								3
